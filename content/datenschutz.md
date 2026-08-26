@@ -20,9 +20,13 @@ Diese Website wird als statische Website über **GitHub Pages** bereitgestellt. 
 
 Auf der Startseite ist ein Veranstaltungskalender des Anbieters Luma eingebettet. Beim Laden des Kalenders wird eine Verbindung zu Luma hergestellt. Dabei können insbesondere Ihre IP-Adresse und Browserinformationen an Luma übermittelt und Cookies gesetzt werden. Weitere Informationen finden Sie in der [Datenschutzerklärung von Luma](https://lu.ma/privacy-policy).
 
+## Eingebettete LinkedIn-Beiträge
+
+Auf der Startseite sind Beiträge des Anbieters LinkedIn eingebettet. Beim Laden dieser Beiträge wird eine Verbindung zu LinkedIn hergestellt. Dabei können insbesondere Ihre IP-Adresse und Browserinformationen an LinkedIn übermittelt und Cookies gesetzt werden. Weitere Informationen finden Sie in der [Datenschutzerklärung von LinkedIn](https://www.linkedin.com/legal/privacy-policy).
+
 ## Externe Links
 
-Diese Website enthält Links zu externen Angeboten, darunter Telegram, LinkedIn, HPI, Pathfinder und GitHub. Erst wenn Sie einem solchen Link folgen, werden Daten an den jeweiligen Anbieter übertragen. Für die Verarbeitung auf den externen Seiten ist der jeweilige Betreiber verantwortlich.
+Diese Website enthält Links zu externen Angeboten, darunter Telegram, LinkedIn, HPI, Pathfinder und GitHub. Wenn Sie einem solchen Link folgen, werden Daten an den jeweiligen Anbieter übertragen. Für die Verarbeitung auf den externen Seiten ist der jeweilige Betreiber verantwortlich.
 
 ## Kontaktaufnahme
 
