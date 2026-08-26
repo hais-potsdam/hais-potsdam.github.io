@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="{{ site.Language.LanguageCode }}">
+<html lang="{{ with .Params.htmlLang }}{{ . }}{{ else }}{{ site.Language.LanguageCode }}{{ end }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#f4f0e8">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · HAIS{{ end }}</title>
   {{ with resources.Get "css/main.css" | minify | fingerprint }}

@@ -1,6 +1,6 @@
 # HAIS - HPI AI Safety Club
 
-Static website for the HPI AI Safety Club, built with [Hugo](https://gohugo.io/) and deployed on GitHub Pages. The generated site uses semantic HTML, plain CSS, and a few lines of vanilla JavaScript for the spam-resistant email link. It has no client-side framework or server-side runtime.
+Static website for the HPI AI Safety Club, built with [Hugo](https://gohugo.io/) and deployed on GitHub Pages. The generated site uses semantic HTML, plain CSS, and small vanilla JavaScript modules for the spam-resistant email link and consent-gated external embeds. It has no client-side framework or server-side runtime.
 
 ## Local development
 
@@ -29,14 +29,9 @@ Set `baseURL` in `hugo.toml` if the repository or deployment URL changes.
 
 ## Image processing
 
-The checked-in WebP files were processed once with **ImageMagick 7.1.2-12**. There is deliberately no image-processing script or image dependency in the project. Processing consisted of applying EXIF orientation, removing metadata, constraining large event photographs to 1800 × 1350 px without upscaling, and encoding them as WebP at quality 82. Organizer portraits use quality 84.
+Convert images to WebP and scale them to a reasonable size before adding them to the page!
 
-| Source | Output | Source size | Output size |
-| --- | --- | ---: | ---: |
-| `slideshow/cover.jpg` | `static/images/slideshow/cover.webp` | 3700×2775 | 1800×1350 |
-| `slideshow/jan.jpg` | `static/images/slideshow/jan.webp` | 4624×3472 | 1798×1350 |
-| `daniel.jpg` | `static/images/organizers/daniel.webp` | 640×640 | 640×640 |
-| `jan.png` | `static/images/organizers/jan.webp` | 506×506 | 506×506 |
+The checked-in WebP files were processed once with **ImageMagick 7.1.2-12**. There is deliberately no image-processing script or image dependency in the project. Processing consisted of applying EXIF orientation, removing metadata, constraining large event photographs to 1800 × 1350 px without upscaling, and encoding them as WebP at quality 82. Organizer portraits use quality 84.
 
 Representative commands:
 
@@ -48,9 +43,14 @@ magick source.jpg -auto-orient -strip -resize '1800x1350>' -quality 82 output.we
 magick source.jpg -auto-orient -strip -resize '800x800>' -quality 84 output.webp
 ```
 
-Jan's transparent PNG was flattened against the site's warm paper color (`#f3eee5`) before WebP conversion. The existing HPI WebP was copied without re-encoding.
+## Legal maintenance notes
 
-The Pathfinder source SVG was not valid as a standalone SVG because it lacked the `xmlns="http://www.w3.org/2000/svg"` namespace. The namespace was added in a temporary copy, which was rasterized at 316×64 px (twice its intrinsic dimensions) to `static/images/partners/pathfinder.webp` at WebP quality 90. The repaired intermediate SVG was then removed.
+- Keep the independent-initiative disclaimer. Do not present HPI as a sponsor or endorser. The imprint must identify the AI Safety Club GbR and its currently authorized representative ([§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html)).
+- Keep `content/datenschutz.md` aligned with the actual site. GitHub Pages logs visitor IP addresses; consult its [Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) and [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+- Luma and LinkedIn must remain **click-to-load**: no external iframe, script, image, or connection before separate provider-specific consent. `loading="lazy"` or CSS hiding is not sufficient. Recheck the [Luma](https://luma.com/privacy-policy) and [LinkedIn](https://www.linkedin.com/legal/privacy-policy) policies when changing these embeds.
+- Before adding embeds, analytics, forms, cookies, or another host, reassess [§ 25 TDDDG](https://www.gesetze-im-internet.de/tdddg/__25.html) and GDPR Articles [6](https://eur-lex.europa.eu/eli/reg/2016/679/art_6/oj), [7](https://eur-lex.europa.eu/eli/reg/2016/679/art_7/oj), and [13](https://eur-lex.europa.eu/eli/reg/2016/679/art_13/oj). The German authorities' [digital-services guidance](https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf) is the main implementation reference. Ask HPI Legal to review material changes.
+
+Quick check after building: `rg '<iframe|src=https?://|src="https?://' public/index.html` must return no matches.
 
 ## Deployment
 
