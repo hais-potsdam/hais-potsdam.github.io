@@ -1,4 +1,4 @@
-baseURL = "https://jafber.github.io/"
+baseURL = "https://hais-potsdam.github.io/"
 languageCode = "en"
 title = "HAIS - HPI AI Safety Club"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]

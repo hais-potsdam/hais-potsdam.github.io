@@ -54,4 +54,4 @@ Quick check after building: `rg '<iframe|src=https?://|src="https?://' public/in
 
 ## Deployment
 
-Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages at `https://jafber.github.io/`. The repository must be named `jafber.github.io`, and its Pages source must be set to **GitHub Actions**.
+Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages at `https://hais-potsdam.github.io/`. The repository is owned by the `hais-potsdam` organization and must remain named `hais-potsdam.github.io`; its Pages source must be set to **GitHub Actions**.
