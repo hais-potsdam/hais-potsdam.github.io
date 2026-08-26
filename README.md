@@ -54,4 +54,4 @@ Quick check after building: `rg '<iframe|src=https?://|src="https?://' public/in
 
 ## Deployment
 
-Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages. In the repository settings, the Pages source must be set to **GitHub Actions**.
+Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages at `https://jafber.github.io/`. The repository must be named `jafber.github.io`, and its Pages source must be set to **GitHub Actions**.
