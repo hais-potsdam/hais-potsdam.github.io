@@ -4,7 +4,7 @@ title = "HPI AI Safety Initiative"
 disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
-  description = "Join the HPI AI Safety Initiative in Potsdam for a weekly reading circle, AI safety events and a student community focused on making AI safer."
+  description = "Join HAIS, the HPI AI Safety Initiative in Potsdam for a weekly reading circle, public talks and a student community focused on tackling the risks of future artificial intelligence systems."
 
 [markup.goldmark.renderer]
   unsafe = true
