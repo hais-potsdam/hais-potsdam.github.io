@@ -1,4 +1,4 @@
 ---
-title: "HAIS - HPI AI Safety Club"
-description: "Building the AI safety community at Hasso Plattner Institute in Potsdam."
+title: "HPI AI Safety Initiative | Events and Reading Circle in Potsdam"
+description: "Join the HPI AI Safety Initiative in Potsdam for a weekly reading circle, AI safety events and a student community focused on making AI safer."
 ---

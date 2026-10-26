@@ -1,6 +1,6 @@
 ---
 title: "Datenschutz"
-description: "Datenschutzhinweise des AI Safety Club."
+description: "Datenschutzhinweise der HPI AI Safety Initiative in Potsdam."
 htmlLang: "de"
 ---
 

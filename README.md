@@ -1,6 +1,6 @@
-# HAIS - HPI AI Safety Club
+# HAIS - HPI AI Safety Initiative
 
-Static website for the HPI AI Safety Club, built with [Hugo](https://gohugo.io/) and deployed on GitHub Pages. The generated site uses semantic HTML, plain CSS, and small vanilla JavaScript modules for consent-gated external embeds. It has no client-side framework or server-side runtime.
+Static website for the HPI AI Safety Initiative, built with [Hugo](https://gohugo.io/) and deployed on GitHub Pages. The generated site uses semantic HTML, plain CSS, and small vanilla JavaScript modules for consent-gated external embeds. It has no client-side framework or server-side runtime.
 
 ## Local development
 
@@ -58,4 +58,4 @@ Quick check after building: `rg '<iframe|src=https?://|src="https?://' public/in
 
 ## Deployment
 
-Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages at `https://hais-potsdam.github.io/`. The repository is owned by the `hais-potsdam` organization and must remain named `hais-potsdam.github.io`; its Pages source must be set to **GitHub Actions**.
+Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages at `https://hpi-ai-safety.de/`. The repository is owned by the `hais-potsdam` organization and must remain named `hais-potsdam.github.io`; its Pages source must be set to **GitHub Actions**.

@@ -1,6 +1,6 @@
 ---
 title: "Impressum"
-description: "Impressum des AI Safety Club."
+description: "Impressum der HPI AI Safety Initiative in Potsdam."
 htmlLang: "de"
 ---
 

@@ -1,10 +1,10 @@
-baseURL = "https://hais-potsdam.github.io/"
+baseURL = "https://hpi-ai-safety.de/"
 languageCode = "en"
-title = "HAIS - HPI AI Safety Club"
-disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+title = "HPI AI Safety Initiative"
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [params]
-  description = "Building the AI safety community at Hasso Plattner Institute in Potsdam."
+  description = "Join the HPI AI Safety Initiative in Potsdam for a weekly reading circle, AI safety events and a student community focused on making AI safer."
 
 [markup.goldmark.renderer]
   unsafe = true

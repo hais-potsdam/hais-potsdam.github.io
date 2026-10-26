@@ -3,11 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  {{ $description := .Description | default site.Params.description }}
+  {{ $title := .Title }}
+  {{ if not .IsHome }}{{ $title = printf "%s · %s" .Title site.Title }}{{ end }}
+  <meta name="description" content="{{ $description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "images/slideshow/crowd.webp" | absURL }}">
+  <meta property="og:image:alt" content="Students attending an AI safety event at HPI">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="{{ "images/slideshow/crowd.webp" | absURL }}">
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#fafaf6">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon.png" | relURL }}">
-  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · HAIS{{ end }}</title>
+  <title>{{ $title }}</title>
   <link rel="preload" href="{{ "fonts/noto-serif-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ "fonts/noto-sans-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   {{ with resources.Get "css/main.css" | minify | fingerprint }}
