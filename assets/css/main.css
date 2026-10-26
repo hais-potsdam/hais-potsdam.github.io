@@ -62,9 +62,9 @@ button { font: inherit; }
 .email-address { text-decoration: underline; text-underline-offset: .2em; }
 h1, h2, h3, p { margin: 0; }
 h1, h2, h3 { font-weight: 400; line-height: 1.15; }
-h1 { font-size: clamp(2.25rem, 3.3vw, 2.625rem); }
-h2 { font-size: clamp(2rem, 3vw, 2.5rem); }
-h3 { font-size: 1.625rem; }
+h1 { font-size: clamp(2rem, 3vw, 2.375rem); }
+h2 { font-size: clamp(1.75rem, 2.7vw, 2.25rem); }
+h3 { font-size: 1.4375rem; }
 .shell { width: var(--shell); margin-inline: auto; }
 section[id] { scroll-margin-top: var(--header-height, 110px); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
@@ -85,8 +85,8 @@ section[id] { scroll-margin-top: var(--header-height, 110px); }
 .feature-copy { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-copy); }
 .eyebrow { color: var(--accent); font-size: .8125rem; line-height: 1.5; text-transform: uppercase; }
 .feature-photo { min-width: 0; margin: 0; }
-.feature-photo figcaption { margin-top: .75rem; color: var(--muted); font-size: 1.0625rem; line-height: 1.5; }
-.body-copy { font-size: 1.375rem; line-height: 1.5; }
+.feature-photo figcaption { margin-top: .75rem; color: var(--muted); font-size: 1rem; line-height: 1.5; }
+.body-copy { font-size: 1.1875rem; line-height: 1.5; }
 .feature-photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .stakes { grid-template-columns: minmax(0, 480fr) minmax(0, 544fr); }
 .action-link { display: inline-block; padding: 0; border: 0; background: transparent; color: var(--accent); cursor: pointer; font-family: var(--sans); font-size: 1rem; line-height: 1.5; font-weight: 650; text-align: left; text-decoration: underline; text-underline-offset: .25em; overflow-wrap: anywhere; }
@@ -110,9 +110,9 @@ section[id] { scroll-margin-top: var(--header-height, 110px); }
 .people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
 .person img { width: 180px; height: 180px; border-radius: 50%; aspect-ratio: 1; object-fit: cover; background: var(--paper-deep); }
 .person > div { display: flex; flex-direction: column; align-items: flex-start; gap: .75rem; margin-top: var(--space-copy); }
-.person .body-copy { font-size: 1.125rem; }
+.person .body-copy { font-size: 1rem; }
 
-.site-footer { padding-block: 2rem; background: var(--paper-deep); font-size: 1.0625rem; }
+.site-footer { padding-block: 2rem; background: var(--paper-deep); font-size: 1rem; }
 .footer-main { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--space-column); padding-bottom: var(--space-copy); }
 .footer-note { display: flex; flex-direction: column; gap: .75rem; }
 .footer-note .body-copy { color: var(--muted); font-size: inherit; }
@@ -122,9 +122,9 @@ section[id] { scroll-margin-top: var(--header-height, 110px); }
 .footer-bottom { display: flex; justify-content: space-between; gap: 2rem; padding-top: var(--space-copy); border-top: 1px solid var(--line); color: var(--muted); font-size: .8125rem; }
 .footer-bottom nav { display: flex; gap: 1.5rem; font-family: var(--sans); font-size: .9375rem; white-space: nowrap; }
 .legal { max-width: 800px; min-height: 60vh; padding-block: var(--space-section); }
-.legal-content { margin-top: 2rem; overflow-wrap: anywhere; }
+.legal-content { margin-top: 2rem; overflow-wrap: anywhere; font-size: 1rem; }
 .legal-content > * + * { margin-top: var(--space-copy); }
-.legal-content h2 { margin-top: 2.5rem; font-size: 1.75rem; }
+.legal-content h2 { margin-top: 2.5rem; font-size: 1.5625rem; }
 .legal-content h3 { margin-top: 2rem; }
 .legal-content li + li { margin-top: .5rem; }
 
@@ -139,7 +139,7 @@ section[id] { scroll-margin-top: var(--header-height, 110px); }
   .nav-wrap { flex-wrap: wrap; gap: 1.25rem; padding-block: 1.25rem; }
   .site-header nav { width: 100%; gap: 1.5rem; }
   .brand-subtitle { font-size: .75rem; }
-  .body-copy { font-size: 1.1875rem; }
+  .body-copy { font-size: 1.0625rem; }
   .people { grid-template-columns: 1fr; gap: 2.5rem; }
   .person img { width: 160px; height: 160px; }
   .embed-consent { padding: 1.25rem; }
