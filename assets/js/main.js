@@ -1,3 +1,14 @@
+// Keep section anchors aligned with the sticky header, including wrapped navigation.
+const header = document.querySelector('.site-header');
+
+if (header) {
+  const updateHeaderHeight = () => {
+    document.documentElement.style.setProperty('--header-height', `${header.getBoundingClientRect().height}px`);
+  };
+  updateHeaderHeight();
+  new ResizeObserver(updateHeaderHeight).observe(header);
+}
+
 const externalEmbeds = document.querySelectorAll('.external-embed');
 
 externalEmbeds.forEach((embed) => {
@@ -25,12 +36,3 @@ externalEmbeds.forEach((embed) => {
     content.hidden = false;
   });
 });
-
-const emailButton = document.querySelector('#email-button');
-
-if (emailButton) {
-  emailButton.addEventListener('click', () => {
-    const address = ['klub-artificial-intelligence-sprecher', 'hpi', 'de'].join('@').replace('@de', '.de');
-    window.location.href = `mailto:${address}`;
-  });
-}

@@ -1,71 +1,35 @@
 {{ define "main" }}
 <section class="feature hero shell" id="about">
   <div class="feature-copy">
-    <h1>We are the <em>HPI AI Safety Initiative</em>.</h1>
-    <p class="body-copy">HAIS is a group of students at the Hasso Plattner Institute dedicated to reducing the risks of future AI systems. We are here to help talented students become researchers and policymakers in AI safety.</p>
-    <p class="body-copy">Want to get involved? Join our group and drop a message in the introductions channel. We are open to HPI students and all people from Potsdam.</p>
-    <a class="action-link" href="https://t.me/+nj6jG9pe8HljYTMy" rel="external noreferrer">Join our Telegram group <span aria-hidden="true">↗</span></a>
+    <p class="eyebrow">Open to HPI students and all people from Potsdam</p>
+    <h1>We are a group of students at <a href="https://hpi.de">HPI</a> working to make AI safer.</h1>
+    <p class="body-copy">In the future, AI could become the most powerful technology on earth. If tech corporations misuse their creation or lose control of it entirely, the consequences could be catastrophic.</p>
+    <p class="body-copy">To get involved, join our group and drop a message in the introductions channel!</p>
+    <a class="action-link button-link" href="https://t.me/+nj6jG9pe8HljYTMy" rel="external noreferrer">Join our Telegram group <span aria-hidden="true">↗</span></a>
   </div>
-  <img class="feature-image" src="{{ "images/slideshow/crowd.webp" | relURL }}" width="1800" height="1350" alt="Students attending an AI safety event at HPI">
+  <figure class="feature-photo">
+    <img src="{{ "images/slideshow/crowd.webp" | relURL }}" width="1800" height="1350" alt="Students attending an AI safety event at HPI">
+  </figure>
 </section>
 
 <section class="feature stakes shell">
-  <img class="feature-image" src="{{ "images/slideshow/presentation.webp" | relURL }}" width="1798" height="1350" loading="lazy" alt="Man giving a presentation on AI risk">
+  <figure class="feature-photo">
+    <img src="{{ "images/slideshow/presentation.webp" | relURL }}" width="1798" height="1350" loading="lazy" alt="Man giving a presentation on AI risk">
+  </figure>
   <div class="feature-copy">
-    <h2>The stakes have never been higher.</h2>
-    <p class="body-copy">Over the past years, AI systems have gotten wildly more capable, but this might only be the beginning. Some experts believe that soon, AI could start to recursively improve itself, becoming more capable than the smartest of humans.</p>
-    <p class="body-copy">If we implement these systems right, they can help us solve humanity's most pressing problems. If tech corporations abuse their powers or lose control over them entirely, the consequences will be catastrophic.</p>
-    <a class="action-link" href="https://jan-berndt.de/posts/humanity-cooked/" rel="external noreferrer">Read more <span aria-hidden="true">↗</span></a>
+    <h2>We build AI safety careers.</h2>
+    <p class="body-copy">Our goal is to raise awareness and help students become professionals in the field.</p>
+    <p class="body-copy">We organize events at HPI, run a weekly reading circle and visit conferences together.</p>
+    <a class="action-link" href="https://www.linkedin.com/company/hpi-ai-safety/" rel="external noreferrer">See more of what we've been doing on LinkedIn ↗</a>
   </div>
 </section>
 
-<section class="section shell" id="activities">
-  <div class="section-heading">
-    <h2>What we do.</h2>
-  </div>
+<section class="section shell" id="events">
+  <h2>Upcoming events.</h2>
   <div class="section-content">
-    <p class="body-copy">Our programme is currently taking shape. More information about talks, reading groups and opportunities to contribute will follow soon.</p>
-    <div class="external-embed linkedin-embed" data-provider="LinkedIn" data-height="627" data-embed-urls="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7491524466901020674?collapsed=1|https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7486359750704521216?collapsed=1|https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7469060055795941376?collapsed=1">
-      <div class="embed-consent">
-        <div class="embed-consent-label">
-          <p>LinkedIn posts <span aria-hidden="true">·</span> data transfer &amp; cookies</p>
-          <details class="embed-info">
-            <summary aria-label="Privacy information about LinkedIn content"><span aria-hidden="true">ⓘ</span></summary>
-            <div class="embed-info-text">
-              <p>Loading connects to LinkedIn. LinkedIn receives data such as your IP address and device information, may set cookies and may process data in the US. Consent applies only to this page view.</p>
-              <a href="{{ "datenschutz/#3-eingebettete-inhalte-von-luma-und-linkedin" | relURL }}">Privacy details</a>
-            </div>
-          </details>
-        </div>
-        <button class="action-link embed-load" type="button">Allow and load LinkedIn posts</button>
-      </div>
-      <div class="embed-content" hidden>
-        <div class="embed-frames" aria-label="LinkedIn posts from past events"></div>
-      </div>
-    </div>
-    <a class="action-link linkedin-link" href="https://www.linkedin.com/in/jafber/" rel="external noreferrer">Follow us on LinkedIn <span aria-hidden="true">↗</span></a>
-  </div>
-</section>
-
-<section class="section shell" id="contact">
-  <div class="section-heading">
-    <h2>Get in contact.</h2>
-  </div>
-  <div class="section-content">
-    <p class="body-copy">Join our Telegram group to hear about upcoming events, or send us an email.</p>
-    <div class="contact-links">
-      <a class="action-link" href="https://t.me/+nj6jG9pe8HljYTMy" rel="external noreferrer">Join our Telegram group <span aria-hidden="true">↗</span></a>
-      <button class="action-link" id="email-button" type="button">klub-artificial-intelligence-sprecher [at] hpi [dot] de <span aria-hidden="true">↗</span></button>
-    </div>
-  </div>
-</section>
-
-<section class="section events-section shell" id="events">
-  <div class="section-heading">
-    <h2>Upcoming events.</h2>
-  </div>
-  <div class="section-content">
-    <div class="external-embed calendar-embed" data-provider="Luma" data-height="450" data-embed-urls="https://luma.com/embed/calendar/cal-sqyI6R6qE1P3lVU/events">
+    <p class="body-copy">Visit our weekly reading circle to get to know us! Throughout winter semester 26/27, we meet <b>every Tuesday at 5PM in room K-2.03</b>. No signup or preparation required.</p>
+    <p class="body-copy">We run 1-2 large events each Semester. Find them in our <a href="https://luma.com/calendar/cal-sqyI6R6qE1P3lVU" rel="external noreferrer">Luma calendar</a>:</p>
+    <div class="external-embed" data-provider="Luma" data-height="450" data-embed-urls="https://luma.com/embed/calendar/cal-sqyI6R6qE1P3lVU/events">
       <div class="embed-consent">
         <div class="embed-consent-label">
           <p>Luma calendar <span aria-hidden="true">·</span> data transfer &amp; cookies</p>
@@ -73,33 +37,47 @@
             <summary aria-label="Privacy information about Luma content"><span aria-hidden="true">ⓘ</span></summary>
             <div class="embed-info-text">
               <p>Loading connects to Luma. Luma receives data such as your IP address and device information, may set cookies and processes data in the US. Consent applies only to this page view.</p>
-              <a href="{{ "datenschutz/#3-eingebettete-inhalte-von-luma-und-linkedin" | relURL }}">Privacy details</a>
+              <a href="{{ "datenschutz/#3-eingebettete-inhalte-von-luma" | relURL }}">Privacy details</a>
             </div>
           </details>
         </div>
-        <button class="action-link embed-load" type="button">Allow and load Luma calendar</button>
+        <button class="action-link embed-load" type="button">Allow and load</button>
       </div>
       <div class="embed-content" hidden>
         <div class="embed-frames" aria-label="HAIS upcoming events on Luma"></div>
       </div>
     </div>
-    <a class="action-link embed-fallback-link" href="https://luma.com/calendar/cal-sqyI6R6qE1P3lVU" rel="external noreferrer">Open our Luma calendar <span aria-hidden="true">↗</span></a>
   </div>
 </section>
 
-<section class="section organizers shell" id="organizers">
-  <div class="section-heading">
-    <h2>Organizers.</h2>
-  </div>
-  <div class="section-content people">
+<section class="section shell" id="organizers">
+  <h2>Organizers.</h2>
+  <div class="people">
     <article class="person">
       <img src="{{ "images/organizers/daniel.webp" | relURL }}" width="640" height="640" loading="lazy" alt="Portrait of Daniel Cermann">
-      <div><h3>Daniel Cermann</h3><p class="body-copy">Fourth-year undergraduate in IT Systems Engineering.</p><a class="action-link" href="https://www.linkedin.com/in/daniel-cermann/" rel="external noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      <div>
+        <h3>Daniel Cermann</h3>
+        <p class="body-copy">Fourth-year undergraduate in IT Systems Engineering.</p>
+        <a class="action-link" href="https://www.linkedin.com/in/daniel-cermann/" rel="external noreferrer">LinkedIn ↗</a>
+      </div>
     </article>
     <article class="person">
       <img src="{{ "images/organizers/jan.webp" | relURL }}" width="506" height="506" loading="lazy" alt="Portrait of Jan Berndt">
-      <div><h3>Jan Berndt</h3><p class="body-copy">Fourth-year undergraduate in IT Systems Engineering.</p><a class="action-link" href="https://www.linkedin.com/in/jafber/" rel="external noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      <div>
+        <h3>Jan Berndt</h3>
+        <p class="body-copy">Fourth-year undergraduate in IT Systems Engineering.</p>
+        <a class="action-link" href="https://www.linkedin.com/in/jafber/" rel="external noreferrer">LinkedIn ↗</a>
+      </div>
     </article>
+  </div>
+</section>
+
+<section class="section shell" id="contact">
+  <h2>Get in contact.</h2>
+  <div class="section-content">
+    <p class="body-copy">The easiest way to reach us is to join our Telegram group and drop a message in the introductions channel.</p>
+    <p><a class="action-link button-link" href="https://t.me/+nj6jG9pe8HljYTMy" rel="external noreferrer">Join our Telegram group <span aria-hidden="true">&#8599;</span></a></p>
+    <p class="body-copy">Alternatively, email us at <span class="email-address">sprecher [at] hpi-ai-safety.de</span>.</p>
   </div>
 </section>
 {{ end }}

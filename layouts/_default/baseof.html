@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
   <meta name="referrer" content="no-referrer">
-  <meta name="theme-color" content="#f4f0e8">
+  <meta name="theme-color" content="#fafaf6">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon.png" | relURL }}">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · HAIS{{ end }}</title>
+  <link rel="preload" href="{{ "fonts/noto-serif-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/noto-sans-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   {{ with resources.Get "css/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
   {{ end }}

@@ -1,6 +1,6 @@
 # HAIS - HPI AI Safety Club
 
-Static website for the HPI AI Safety Club, built with [Hugo](https://gohugo.io/) and deployed on GitHub Pages. The generated site uses semantic HTML, plain CSS, and small vanilla JavaScript modules for the spam-resistant email link and consent-gated external embeds. It has no client-side framework or server-side runtime.
+Static website for the HPI AI Safety Club, built with [Hugo](https://gohugo.io/) and deployed on GitHub Pages. The generated site uses semantic HTML, plain CSS, and small vanilla JavaScript modules for consent-gated external embeds. It has no client-side framework or server-side runtime.
 
 ## Local development
 
@@ -27,6 +27,10 @@ Set `baseURL` in `hugo.toml` if the repository or deployment URL changes.
 - `static/images/` - ready-to-serve WebP assets
 - `agent-instructions/` - original copy and source images
 
+## Fonts
+
+Noto Serif (headings and body text) and Noto Sans (navigation and controls) are self-hosted in `static/fonts/`. The WOFF2 files come from Google Fonts and include Latin and Latin Extended subsets with variable weights 400-700. CSS uses `font-display: swap`; the core Latin files are preloaded. Visitors make no requests to Google Fonts. The SIL Open Font License for each family is included alongside the font files.
+
 ## Image processing
 
 Convert images to WebP and scale them to a reasonable size before adding them to the page!
@@ -47,7 +51,7 @@ magick source.jpg -auto-orient -strip -resize '800x800>' -quality 84 output.webp
 
 - Keep the independent-initiative disclaimer. Do not present HPI as a sponsor or endorser. The imprint must identify the AI Safety Club GbR and its currently authorized representative ([§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html)).
 - Keep `content/datenschutz.md` aligned with the actual site. GitHub Pages logs visitor IP addresses; consult its [Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) and [privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
-- Luma and LinkedIn must remain **click-to-load**: no external iframe, script, image, or connection before separate provider-specific consent. `loading="lazy"` or CSS hiding is not sufficient. Recheck the [Luma](https://luma.com/privacy-policy) and [LinkedIn](https://www.linkedin.com/legal/privacy-policy) policies when changing these embeds.
+- Luma must remain **click-to-load**: no external iframe, script, image, or connection before separate provider-specific consent. `loading="lazy"` or CSS hiding is not sufficient. Recheck the [Luma](https://luma.com/privacy-policy) policy when changing this embed.
 - Before adding embeds, analytics, forms, cookies, or another host, reassess [§ 25 TDDDG](https://www.gesetze-im-internet.de/tdddg/__25.html) and GDPR Articles [6](https://eur-lex.europa.eu/eli/reg/2016/679/art_6/oj), [7](https://eur-lex.europa.eu/eli/reg/2016/679/art_7/oj), and [13](https://eur-lex.europa.eu/eli/reg/2016/679/art_13/oj). The German authorities' [digital-services guidance](https://datenschutzkonferenz-online.de/media/oh/OH_Digitale_Dienste.pdf) is the main implementation reference. Ask HPI Legal to review material changes.
 
 Quick check after building: `rg '<iframe|src=https?://|src="https?://' public/index.html` must return no matches.

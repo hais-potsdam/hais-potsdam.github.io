@@ -29,9 +29,9 @@ Weitere Informationen:
 - [GitHub Pages: Protokollierung der IP-Adresse](https://docs.github.com/de/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Datenschutzerklärung von GitHub](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)
 
-## 3. Eingebettete Inhalte von Luma und LinkedIn
+## 3. Eingebettete Inhalte von Luma
 
-Wir verwenden keine eigenen Analyse- oder Trackingdienste und setzen selbst keine Cookies ein. Auf der Startseite können jedoch ein Veranstaltungskalender von Luma und Beiträge von LinkedIn geladen werden. Beim ersten Aufruf der Website sind diese Inhalte technisch blockiert: Es werden weder Iframes noch Skripte der Anbieter geladen und es wird keine Verbindung zu ihnen hergestellt.
+Wir verwenden keine eigenen Analyse- oder Trackingdienste und setzen selbst keine Cookies ein. Auf der Startseite können jedoch ein Veranstaltungskalender von Luma geladen werden. Beim ersten Aufruf der Website sind diese Inhalte technisch blockiert: Es werden weder Iframes noch Skripte der Anbieter geladen und es wird keine Verbindung zu ihnen hergestellt.
 
 Erst wenn Sie die jeweilige Schaltfläche „Allow and load …“ auswählen, willigen Sie getrennt für den dort genannten Anbieter ein, dass der Inhalt geladen wird. Dabei können insbesondere Ihre IP-Adresse, Zeitpunkt und aufgerufener Inhalt sowie Angaben zu Browser, Betriebssystem und Gerät an den Anbieter übermittelt werden. Der Anbieter kann Cookies oder vergleichbare Technologien auf Ihrem Gerät speichern oder auslesen und Daten gegebenenfalls mit einem bestehenden Benutzerkonto verknüpfen.
 
@@ -42,12 +42,6 @@ Rechtsgrundlagen sind Ihre Einwilligung nach Art. 6 Abs. 1 Buchst. a und Art. 7 
 Der Veranstaltungskalender wird von **Luma Labs, Inc.**, USA, angeboten. Nach Aktivierung erhält Luma technisch erforderliche Verbindungs- und Protokolldaten. Luma nennt insbesondere IP-Adresse, Browsertyp und -version, besuchte Seiten, Besuchszeit und -dauer sowie weitere Nutzungsstatistiken. Luma verwendet nach eigenen Angaben Cookies und kann Analysedienste wie Google Analytics einsetzen. Die Verarbeitung durch Luma dient der Bereitstellung und Verbesserung seines Dienstes. Empfänger können die von Luma eingesetzten [Unterauftragsverarbeiter](https://luma.com/subprocessors) sein.
 
 Luma verarbeitet Daten in den USA. Das [Data Processing Addendum von Luma](https://luma.com/dpa) sieht für erforderliche grenzüberschreitende Übermittlungen rechtlich durchsetzbare Transfermechanismen vor und definiert hierzu insbesondere die Standardvertragsklauseln der Europäischen Kommission. Luma speichert unterschiedliche Daten nach eigenen Angaben unterschiedlich lange und grundsätzlich so lange, wie dies für die Bereitstellung des Dienstes oder zur Erfüllung gesetzlicher Pflichten erforderlich ist. Weitere Einzelheiten finden Sie in der [Datenschutzerklärung von Luma](https://luma.com/privacy-policy).
-
-### LinkedIn
-
-Die LinkedIn-Beiträge werden für Personen in der EU und im EWR von **LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland**, angeboten. Nach Aktivierung kann LinkedIn insbesondere IP-Adresse, Referrer-URL, Zeitpunkt, Geräte- und Browserinformationen, Cookie- und Gerätekennungen sowie die Interaktion mit den Inhalten erfassen. LinkedIn kann diese Informationen mit einem bestehenden LinkedIn-Konto verbinden. LinkedIn beschreibt als Zwecke unter anderem die Bereitstellung, Sicherung, Personalisierung und Analyse seiner Dienste sowie Werbung und die Weiterentwicklung seiner Angebote.
-
-LinkedIn verarbeitet Daten auch in den USA und anderen Drittländern. Nach eigenen Angaben stützt LinkedIn Übermittlungen insbesondere auf das EU-US Data Privacy Framework und Standardvertragsklauseln der Europäischen Kommission. LinkedIn speichert personenbezogene Daten grundsätzlich so lange, wie ein Konto besteht oder die Daten zur Bereitstellung seiner Dienste benötigt werden; für einzelne Daten gelten abweichende Fristen und gesetzliche Ausnahmen. Einzelheiten und Einstellungsmöglichkeiten enthalten die [Datenschutzerklärung von LinkedIn](https://www.linkedin.com/legal/privacy-policy), die [europäischen Datenschutzhinweise](https://www.linkedin.com/legal/privacy/eu) und die [Cookie-Richtlinie](https://www.linkedin.com/legal/cookie-policy).
 
 ## 4. Externe Links
 
