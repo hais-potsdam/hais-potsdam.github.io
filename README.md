@@ -59,3 +59,9 @@ Quick check after building: `rg '<iframe|src=https?://|src="https?://' public/in
 ## Deployment
 
 Pushing to `main` triggers the workflow in `.github/workflows/hugo.yml`. GitHub Actions builds the static output and publishes it through GitHub Pages at `https://hpi-ai-safety.de/`. The repository is owned by the `hais-potsdam` organization and must remain named `hais-potsdam.github.io`; its Pages source must be set to **GitHub Actions**.
+
+## Design
+
+Mockup is on [figma](https://www.figma.com/design/U5wAYYjN8vEk5FYF9ciFRj/HAIS-website?node-id=0-1&t=21PW2VKCxvD27biK-1).
+
+Check `design-guidelines/` for a guide on how the website and supplementary materials should look.
